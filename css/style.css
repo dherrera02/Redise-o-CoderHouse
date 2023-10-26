@@ -39,9 +39,11 @@ a {
     min-height: 200px;
     background-color: #1a1a1a;
     color: #fafafa;
-    border: 1px solid #ea90ff;
     margin: 15px;
     padding: 30px;
+    box-shadow: rgba(234, 144, 255, 1) 0px 0px 4px 0px, rgba(234, 144, 255, 0.64) 0px 0px 16px 0px;
+
+
 }
 
 .nosotros .card-title {
@@ -57,12 +59,14 @@ a {
 
 .cta .card {
     min-height: 150px;
+
 }
 
 .cta .card {
     background-color: #1a1a1a;
     color: #fafafa;
     border: 2px solid #ea90ff;
+    
 }
 
 .cta .card-body i{
@@ -188,7 +192,7 @@ a {
     font-size: 2rem;
     font-weight: bold;
     text-align: center;
-    margin: 15;
+    margin-bottom: 15px;
     padding: 10px;
 
 }
@@ -260,6 +264,7 @@ footer {
     background-color: #fafafa;
     color: #1a1a1a;
     border: 2px solid #ea90ff;
+    transition: all 0.2s;
 
 }
 
