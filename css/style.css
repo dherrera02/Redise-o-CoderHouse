@@ -18,7 +18,7 @@ a {
 /* MAIN */
 .btn-Curso {
     background-color: transparent;
-    color: #fafafa;
+    color: white;
     border-radius: 15px;
     margin: 0px;
     padding: 16px 24px;
@@ -157,7 +157,7 @@ a {
 /*Compra*/
 .btn-compra {
     background-color: transparent;
-    color: #fafafa;
+    color: white;
     border-radius: 15px;
     padding: 16px 24px;
     border: 2px solid #d1e500;
@@ -246,13 +246,14 @@ footer {
 /*PSEUDOCLASES*/
 .btn-Curso:hover {
     background-color: #d1e500;
-    color: #1a1a1a;
+    color: #000;
+    transition: 0.2s;
 }
 
 .btn-compra:hover {
     background: linear-gradient(90deg, #ea90ff, #d1e500);
     border: 1px solid transparent;
-    color: #1a1a1a;
+    color: #000;
 }
 
 .cta .card:hover {
@@ -265,6 +266,11 @@ footer {
 .icon-social-media a:hover i{
     color: #d1e500;
     border-color: #d1e500;
+}
+
+/* NavBar */
+.navbar-nav .nav-item a:hover{
+    color: #d1e500;
 }
 
 /* Media Queries */
@@ -292,9 +298,26 @@ footer {
     }
 }
 
-/*Centrar cards compra*/
-@media (max-width: 767px) {
-    .compra {
-      justify-content: center;
+@media screen and (max-width: 392px){
+    .testimonio-img{
+        height: 80px;
+        width: 80px;
+    }
+    .testimonio-texto {
+        font-size: 15px;
+    }
+
+    .testimonio-info .estudiante{
+        font-size: 15px;
+    }
+
+    .estudiante-curso{
+        font-size: 10px;
+    }
+
+    .bandera{
+        width: 45px;
+        height: 40px;
+
     }
 }

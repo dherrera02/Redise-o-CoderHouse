@@ -1,43 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CoderHouse</title>
-    <!-- CDN del CSS Boostrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <!-- Mi propio CSS -->
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-    <!-- CDN del JS de Boostrap para que funcionen los componentes -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html">
-                <img src="../img/logos_coderhouse.png" alt="Logo" width="200" height="48">
-            </a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" href="./carreras.html">Carreras</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./blog.html">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./inspo.html">Inspiracion</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./contacto.html">Contacto</a>
-              </li>
-            </ul>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CoderHouse</title>
+  <link rel="shortcut icon" href="../img/coder-logo.png">
+
+  <!-- CDN del CSS Boostrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- Iconos Boostrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <!-- Mi propio CSS -->
+  <link rel="stylesheet" href="../css/contacto.css">
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar navbar-expand-lg border-bottom border-body justify-between" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../img/logos_coderhouse.png" alt="Logo CoderHouse" width="200" height="48">
+        </a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse .d-flex justify-content-center" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="./carreras.html">Carreras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./inspo.html">Inspiracion</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="container-fluid contacto">
+      <div class="row">
+        <!-- PARTE IZQUIERDA -->
+        <div class="col-md-6 col-sm-12 faq">
+          <div class="container">
+            <h3 class="faq-title text-center">Preguntas Frecuentes</h3 class="faq-title">
+            <div class="accordion" id="faqAccordion">
+              <div class="card">
+                <div class="card-header" id="heading1">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link " type="button" data-toggle="collapse" data-target="#collapse1"
+                      aria-expanded="true" aria-controls="collapse1">
+                      <p>¿Cómo es la modalidad de cursada?</p>
+                    </button>
+                  </h2>
+                </div>
+
+                <div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#faqAccordion">
+                  <div class="card-body">
+                    <p>En Coderhouse podés elegir la modalidad de cursada que mejor se adapte a tus necesidades.</p>
+                    <p>Actualmente podés cursar:</p>
+                    <p>a) Online en vivo: vas a tener 2 clases en vivo por semana.</p>
+                    <p>b) Modalidad CoderFlex: vas a tener 1 clase en vivo y vas a tener disponible el contenido teórico
+                      en videos, desafíos y actividades gamificadas, para que aprendas en el momento que quieras. Por el
+                      momento, esta modalidad está disponible solo para algunos cursos.</p>
+                    <p>Todos nuestros cursos cuentan con profesores y tutores que te van a ayudar a resolver tus dudas
+                      teóricas o sobre los desafíos que tenés que entregar.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" id="heading2">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse2"
+                      aria-expanded="false" aria-controls="collapse2">
+                      <p>¿Cuáles son los medios de pago?</p>
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#faqAccordion">
+                  <div class="card-body">
+                    <p>Podés pagar con tarjeta de crédito o débito a través de Mercado Pago, con dinero en cuenta de
+                      Mercado Pago o hacer una transferencia bancaria.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" id="heading3">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse3"
+                      aria-expanded="false" aria-controls="collapse3">
+                      <p>¿Qué validez tienen los cursos y carreras de Coderhouse?</p>
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#faqAccordion">
+                  <div class="card-body">
+                    <p>Los programas de cada uno de los cursos y carreras de Coderhouse son cocreados con empresas
+                      líderes en innovación de Latinoamérica como Bitso, Endeavor, Tiendanube, Pedidos Ya, Aerolab,
+                      R/GA, Digifianz, entre otras. Esto nos permite tener nuestros contenidos actualizados y avalados
+                      por referentes de la industria.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </nav>
-    
+        <!-- PARTE DERECHA -->
+        <div class="col-md-6 col-sm-12  form-contacto">
+          <h3 class="form-title text-center" style="color: #d1e500;">Dejanos tus datos y nos pondremos en contacto con
+            vos.</h3>
+          <form>
+            <div class="row">
+              <div class="form-group col-md-6">
+                <label for="inputName">Nombre</label>
+                <input type="text" class="form-control" id="inputName">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputApellido">Apellido</label>
+                <input type="text" class="form-control" id="inputApellido">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputEmail4">Email</label>
+              <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="row">
+              <div class="form-group col-md-4">
+                <label for="inputCodArea">Cod. Area</label>
+                <input type="text" class="form-control" id="inputCodArea">
+              </div>
+              <div class="form-group col-md-8">
+                <label for="inputTefono">Teléfono</label>
+                <input type="tel" id="inputTelefono" class="form-control">
+                </input>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Acepto términos y condiciones.
+                </label>
+              </div>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn-form text-nowrap">Enviar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="d-flex flex-column align-items-center justify-content-center">
+    <div class="icon-social-media d-flex flex-wrap align-items-center justify-content-center">
+      <a href="https://twitter.com/coderhouse" target="_blank" rel="noopener noreferr">
+        <i class="bi bi-twitter-x"></i>
+      </a>
+      <a href="https://www.linkedin.com/school/coderhouse/" target="_blank" rel="noopener noreferr">
+        <i class="bi bi-linkedin"></i>
+      </a>
+      <a href="https://www.facebook.com/Coderhouse/" target="_blank" rel="noopener noreferr">
+        <i class="bi bi-facebook"></i>
+      </a>
+      <a href="https://www.youtube.com/channel/UCeFRG6700bzqYI0M_9vyelw/videos" target="_blank" rel="noopener noreferr">
+        <i class="bi bi-youtube"></i>
+      </a>
+      <a href="https://www.instagram.com/coderhouse/" target="_blank" rel="noopener noreferr">
+        <i class="bi bi-instagram"></i>
+      </a>
+      <a href="https://www.tiktok.com/@coderhouse" target="_blank" rel="noopener noreferr">
+        <i class="bi bi-tiktok"></i>
+      </a>
+      <a href="https://discord.com/invite/js5X5SDYSr" target="_blank" rel="noopener noreferr">
+        <i class="bi bi-discord"></i>
+      </a>
+      <a href="https://www.twitch.tv/coderhouse" target="_blank" rel="noopener noreferr">
+        <i class="bi bi-twitch"></i>
+      </a>
+    </div>
+    <div class="copyright">
+      Pagina creada con fines educativos &#169; Diego Herrera
+    </div>
+  </footer>
+  <!-- CDN del JS de Boostrap para que funcionen los componentes -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+
 </body>
+
 </html>
