@@ -1,0 +1,32 @@
+@mixin card-colour {
+  background-color: #414141;
+  color: $color-paraffo;
+}
+
+@mixin card-size {
+  height: 100%;
+  min-height: 200px;
+}
+
+.blogs .card {
+  position: relative;
+  @include card-colour;
+  padding: 50px;
+  @include card-size;
+
+  .card-title {
+    color: white;
+  }
+
+  .card-subtitle {
+    color: rgb(180, 180, 180);
+  }
+
+  .card-link {
+    color: $color-principal;
+    text-decoration: underline;
+    position: absolute;
+    bottom: 0;
+    left: 45px;
+  }
+}

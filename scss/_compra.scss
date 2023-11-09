@@ -1,0 +1,61 @@
+.btn-compra {
+    background-color: transparent;
+    color: white;
+    border-radius: 15px;
+    padding: 16px 24px;
+    border: 2px solid $color-principal;
+    text-align: center;
+    text-transform: lowercase;
+}
+
+.compra .card {
+    background-color: #1a1a1a;
+    color: #fafafa;
+    border: 1px solid #ccc;
+    width: 350px;
+    height: auto;
+    margin: 40px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(209, 229, 0, 1) 0px 2px 4px 0px, rgba(209, 229, 0, 0.64) 0px 2px 16px 0px;
+}
+
+.compra-content i {
+    font-size: 1rem;
+    color: $color-secundario;
+    margin: 10px;
+}
+
+.compra-price-num {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.compra-header .card-title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.compra-price {
+    margin-top: 60px;
+}
+
+.compra-price-text {
+    margin: 0;
+    padding: 5px;
+}
+
+.compra .card-title {
+    background: linear-gradient(90deg, $color-secundario, $color-principal);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn-compra:hover {
+    background: linear-gradient(90deg, $color-secundario, $color-principal);
+    border: 1px solid transparent;
+    color: #000;
+}

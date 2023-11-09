@@ -1,0 +1,18 @@
+@mixin card-colour {
+    background-color: #1a1a1a;
+    color: $color-paraffo;
+}
+
+.nosotros {
+    .card {
+        min-height: 200px;
+        @include card-colour;
+        margin: 15px;
+        padding: 30px;
+        box-shadow: rgba(234, 144, 255, 1) 0px 0px 4px 0px, rgba(234, 144, 255, 0.64) 0px 0px 16px 0px;
+    }
+
+    .card-title {
+        text-transform: uppercase;
+    }
+}

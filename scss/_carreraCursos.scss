@@ -1,0 +1,72 @@
+.cards-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.carrera-curso .card {
+    margin: 0 0.5em;
+    box-shadow: rgba(255, 255, 255, 0.5) 0px 2px 10px 3px;
+    border-radius: 5px;
+    background-color: inherit;
+    color: #e1e1e1;
+}
+
+.carousel-inner {
+    padding: 1em;
+}
+
+.card-subtitle {
+    color: #838383;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: #838383;
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.btn-card-cursos {
+    background-color: transparent;
+    color: $color-principal;
+    border-radius: 5px;
+    margin: 0px;
+    padding: 8px 12px;
+    border: 2px solid $color-principal;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.info-cursada {
+    i {
+        font-size: 1.2rem;
+        color: $color-secundario;
+        margin: 0px 5px;
+    }
+
+    .card {
+        background-color: #1a1a1a;
+        color: $color-paraffo;
+        border: 2px solid $color-secundario;
+        margin: 10px;
+        min-height: 150px;
+        height: 90%;
+
+        .card-text {
+            padding: 5px;
+        }
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+}
+
+.btn-card-cursos:hover {
+    background-color: $color-principal;
+    color: #000;
+    transition: 0.2s;
+}

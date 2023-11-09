@@ -1,0 +1,27 @@
+@mixin content-colour {
+    background-color: #1a1a1a;
+    color: $color-paraffo;
+    border: 2px solid $color-secundario;
+}
+
+.content-curso {
+    .curso {
+        border-radius: 10px;
+        padding: 10px;
+        margin-right: 30px;
+        margin-top: 10px;
+        @include content-colour;
+    }
+
+    max-width: 100%;
+}
+
+.carrera-info {
+    box-shadow: rgba(255, 255, 255, 0.5) 0px 2px 30px 3px;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.seleccionados a {
+    text-decoration: underline;
+}

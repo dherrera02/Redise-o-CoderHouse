@@ -1,0 +1,21 @@
+@mixin size-img {
+  width: 300px;
+  height: 200px;
+}
+
+
+
+.proyectos {
+  img {
+    @include size-img;
+    margin: 15px;
+    object-fit: cover;
+    box-shadow: rgba(255, 255, 255, 0.5) 0px 2px 10px 3px;
+  }
+
+  h3 {
+    color: $color-secundario;
+    text-transform: uppercase;
+    margin: 10px;
+  }
+}

@@ -1,0 +1,94 @@
+/* Agregar espaciado vertical entre las tarjetas en mobile*/
+@media (max-width: 767px) {
+
+  .custom-card,
+  .cta .card {
+    margin: 10px 0;
+    padding: 10px;
+  }
+}
+
+/*Corregir elementos en mobile*/
+@media screen and (max-width: 800px) {
+  .testimonio-img {
+    height: 120px;
+    width: 120px;
+  }
+
+  .testimonio-texto {
+    font-size: 18px;
+  }
+}
+
+//Corregir imagenes
+@media screen and (max-width: 392px) {
+  .testimonio-img {
+    height: 80px;
+    width: 80px;
+  }
+
+  .testimonio-texto,
+  .testimonio-info .estudiante {
+    font-size: 15px;
+  }
+
+  .estudiante-curso {
+    font-size: 10px;
+  }
+
+  .bandera {
+    width: 45px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .contacto {
+    padding: 0px;
+    width: auto;
+  }
+
+  .container {
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 760px) {
+  /* Agregar espacio vertical en vista mobile */
+
+  .row>div[class*="col-"] {
+    margin-bottom: 20px;
+    align-items: center;
+  }
+
+  .webinar .row iframe {
+    width: 320px;
+    height: 187px;
+  }
+}
+
+@media (max-width: 1200px) {
+  /* Agrandar videos */
+
+  .webinar iframe {
+    width: 450px;
+    height: 254px;
+  }
+
+  .row>div[class*="col-"] {
+    margin-bottom: 20px;
+    align-items: center;
+  }
+}
