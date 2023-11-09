@@ -11,6 +11,7 @@
         margin-right: 30px;
         margin-top: 10px;
         @include content-colour;
+        font-family: "Nunito", sans-serif;
     }
 
     max-width: 100%;
@@ -22,6 +23,11 @@
     padding: 30px;
 }
 
-.seleccionados a {
-    text-decoration: underline;
+
+.seleccionados {
+    a {
+        text-decoration: underline;
+
+    }
+
 }

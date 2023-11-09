@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Raleway:wght@500&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@500&family=Poppins:wght@100&family=Raleway:wght@500&family=Roboto:wght@100&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -13,6 +15,19 @@ footer {
 a {
   text-decoration: none;
   color: inherit;
+  font-family: "Nunito", sans-serif;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Raleway", sans-serif;
+}
+
+p,
+ul {
+  font-family: "Nunito", sans-serif;
 }
 
 /* NavBar */
@@ -146,6 +161,7 @@ footer {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 100px;
+  font-family: "Raleway", sans-serif;
 }
 
 .btn-curso:hover {
@@ -334,6 +350,7 @@ footer {
   background-color: #1a1a1a;
   color: #fafafa;
   border: 2px solid #ea90ff;
+  font-family: "Nunito", sans-serif;
 }
 
 .carrera-info {
