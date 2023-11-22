@@ -1,6 +1,7 @@
-@import "variables", "reset", "header", "responsive", "footer", "fonts"; //Globales
+@import "variables", "reset", "header", "footer", "fonts"; //Globales
 @import "banner", "nosotros", "cta", "testimonios", "compra"; //Home Page
 @import "seleccionados", "carreraCursos"; //Carreras Page
 @import "blogs"; // Blog Page
 @import "contacto"; //Contacto Page
 @import "proyectos"; //Proyectos Page
+@import "responsive";

@@ -5,14 +5,37 @@
 
 .carrera-curso .card {
     margin: 0 0.5em;
-    box-shadow: rgba(255, 255, 255, 0.5) 0px 2px 10px 3px;
     border-radius: 5px;
     background-color: inherit;
     color: #e1e1e1;
+    box-shadow: rgba(88, 88, 88, 0.5) 0px 2px 10px 3px;
+    ;
+
+}
+
+.carrera-title {
+    margin-top: 30px;
+    color: $color-principal;
 }
 
 .carousel-inner {
     padding: 1em;
+
+    .card {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+}
+
+.card-body {
+    flex-grow: 1;
+}
+
+.btn-card-cursos {
+    align-self: flex-end;
 }
 
 .card-subtitle {
@@ -38,6 +61,12 @@
     border: 2px solid $color-principal;
     text-align: center;
     text-transform: uppercase;
+
+    &:hover {
+        background-color: $color-principal;
+        color: #000;
+        transition: 0.2s;
+    }
 }
 
 .info-cursada {
@@ -63,10 +92,4 @@
     p {
         font-size: 1.2rem;
     }
-}
-
-.btn-card-cursos:hover {
-    background-color: $color-principal;
-    color: #000;
-    transition: 0.2s;
 }

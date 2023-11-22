@@ -21,6 +21,15 @@
     box-shadow: rgba(255, 255, 255, 0.5) 0px 2px 30px 3px;
     border-radius: 20px;
     padding: 30px;
+
+    h2{
+        color: $color-principal;
+    }
+
+    h4{
+        color: $color-secundario;
+    }
+
 }
 
 
@@ -30,4 +39,8 @@
 
     }
 
+    .curso-parrafo{
+        font-weight: bold;
+        color: $color-secundario;
+    }
 }

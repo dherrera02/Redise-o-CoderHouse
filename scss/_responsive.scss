@@ -8,32 +8,31 @@
   }
 }
 
-/*Corregir elementos en mobile*/
+//Testimonios
 @media screen and (max-width: 800px) {
+  .testimonio-texto {
+    font-size: 18px;
+  }
+
   .testimonio-img {
     height: 120px;
     width: 120px;
   }
-
-  .testimonio-texto {
-    font-size: 18px;
-  }
 }
 
-//Corregir imagenes
 @media screen and (max-width: 392px) {
-  .testimonio-img {
-    height: 80px;
-    width: 80px;
-  }
-
   .testimonio-texto,
   .testimonio-info .estudiante {
-    font-size: 15px;
+    font-size: 12px;
   }
 
   .estudiante-curso {
     font-size: 10px;
+  }
+
+  .testimonio-img {
+    height: 80px;
+    width: 80px;
   }
 
   .bandera {
@@ -44,13 +43,14 @@
 
 @media (max-width: 600px) {
   .title {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 }
 
 @media (max-width: 450px) {
   .title {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    text-align: center;
   }
 }
 

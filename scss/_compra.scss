@@ -6,6 +6,11 @@
     border: 2px solid $color-principal;
     text-align: center;
     text-transform: lowercase;
+
+    &:hover {
+        color: black;
+        background-color: $color-principal;
+    }
 }
 
 .compra .card {
@@ -54,8 +59,3 @@
     -webkit-text-fill-color: transparent;
 }
 
-.btn-compra:hover {
-    background: linear-gradient(90deg, $color-secundario, $color-principal);
-    border: 1px solid transparent;
-    color: #000;
-}

@@ -7,6 +7,12 @@
     border: 2px solid $color-principal;
     text-align: center;
     text-transform: uppercase;
+
+    &:hover {
+        background-color: $color-principal;
+        color: #000;
+        transition: 0.2s;
+    }
 }
 
 .title {
@@ -16,10 +22,4 @@
     -webkit-text-fill-color: transparent;
     padding: 100px;
     font-family: 'Raleway', sans-serif;
-}
-
-.btn-curso:hover {
-    background-color: $color-principal;
-    color: #000;
-    transition: 0.2s;
 }

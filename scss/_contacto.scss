@@ -7,6 +7,7 @@
 .form-contacto {
     .form-title {
         margin-bottom: 15px;
+        color: $color-principal;
     }
 
     background-color: rgb(30, 30, 30);
@@ -22,10 +23,6 @@
             margin: 5px;
         }
     }
-}
-
-
-.form-contacto {
     .form-check {
         margin: 15px 5px;
     }
@@ -45,6 +42,7 @@
         }
     }
 }
+
 
 /*Preguntas Frecuentes*/
 

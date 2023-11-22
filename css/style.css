@@ -30,87 +30,21 @@ ul {
   font-family: "Nunito", sans-serif;
 }
 
+.title {
+  text-transform: uppercase;
+  padding: 20px;
+  text-align: center;
+}
+
+.spams {
+  color: #d1e500;
+}
+
 /* NavBar */
 .navbar-nav .nav-item a:hover {
   color: #d1e500;
 }
 
-/* Agregar espaciado vertical entre las tarjetas en mobile*/
-@media (max-width: 767px) {
-  .custom-card,
-  .cta .card {
-    margin: 10px 0;
-    padding: 10px;
-  }
-}
-/*Corregir elementos en mobile*/
-@media screen and (max-width: 800px) {
-  .testimonio-img {
-    height: 120px;
-    width: 120px;
-  }
-  .testimonio-texto {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 392px) {
-  .testimonio-img {
-    height: 80px;
-    width: 80px;
-  }
-  .testimonio-texto,
-  .testimonio-info .estudiante {
-    font-size: 15px;
-  }
-  .estudiante-curso {
-    font-size: 10px;
-  }
-  .bandera {
-    width: 45px;
-    height: 40px;
-  }
-}
-@media (max-width: 600px) {
-  .title {
-    font-size: 3.5rem;
-  }
-}
-@media (max-width: 450px) {
-  .title {
-    font-size: 2.5rem;
-  }
-}
-@media (max-width: 400px) {
-  .contacto {
-    padding: 0px;
-    width: auto;
-  }
-  .container {
-    margin-top: 100px;
-  }
-}
-@media (max-width: 760px) {
-  /* Agregar espacio vertical en vista mobile */
-  .row > div[class*=col-] {
-    margin-bottom: 20px;
-    align-items: center;
-  }
-  .webinar .row iframe {
-    width: 320px;
-    height: 187px;
-  }
-}
-@media (max-width: 1200px) {
-  /* Agrandar videos */
-  .webinar iframe {
-    width: 450px;
-    height: 254px;
-  }
-  .row > div[class*=col-] {
-    margin-bottom: 20px;
-    align-items: center;
-  }
-}
 footer {
   min-height: 200px;
   background-color: #1a1a1a;
@@ -132,16 +66,15 @@ footer {
   font-size: 1.5rem;
   transition: all 0.2s ease-in;
 }
+.icon-social-media a:hover i {
+  color: #d1e500;
+  border-color: #d1e500;
+}
 
 .copyright {
   font-size: 15px;
   color: #aeaeae;
   padding: 20pxjjj;
-}
-
-.icon-social-media a:hover i {
-  color: #d1e500;
-  border-color: #d1e500;
 }
 
 .btn-curso {
@@ -154,6 +87,11 @@ footer {
   text-align: center;
   text-transform: uppercase;
 }
+.btn-curso:hover {
+  background-color: #d1e500;
+  color: #000;
+  transition: 0.2s;
+}
 
 .title {
   font-size: 4.5rem;
@@ -162,12 +100,6 @@ footer {
   -webkit-text-fill-color: transparent;
   padding: 100px;
   font-family: "Raleway", sans-serif;
-}
-
-.btn-curso:hover {
-  background-color: #d1e500;
-  color: #000;
-  transition: 0.2s;
 }
 
 .nosotros .card {
@@ -193,16 +125,16 @@ footer {
   color: #fafafa;
   border: 2px solid #ea90ff;
 }
-.cta .card-body i {
-  font-size: 2.5rem;
-  color: #ea90ff;
-  padding: 8px 19px;
-}
 .cta .card:hover {
   background-color: #fafafa;
   color: #1a1a1a;
   border: 2px solid #ea90ff;
   transition: all 0.2s;
+}
+.cta .card-body i {
+  font-size: 2.5rem;
+  color: #ea90ff;
+  padding: 8px 19px;
 }
 
 .testimonios {
@@ -213,6 +145,10 @@ footer {
 }
 .testimonios .carousel-item {
   height: 500px;
+}
+.testimonios .title-testimonio {
+  color: #d1e500;
+  text-transform: uppercase;
 }
 
 .carousel-item .container {
@@ -286,6 +222,10 @@ footer {
   text-align: center;
   text-transform: lowercase;
 }
+.btn-compra:hover {
+  color: black;
+  background-color: #d1e500;
+}
 
 .compra .card {
   background-color: #1a1a1a;
@@ -333,12 +273,6 @@ footer {
   -webkit-text-fill-color: transparent;
 }
 
-.btn-compra:hover {
-  background: linear-gradient(90deg, #ea90ff, #d1e500);
-  border: 1px solid transparent;
-  color: #000;
-}
-
 .content-curso {
   max-width: 100%;
 }
@@ -358,9 +292,19 @@ footer {
   border-radius: 20px;
   padding: 30px;
 }
+.carrera-info h2 {
+  color: #d1e500;
+}
+.carrera-info h4 {
+  color: #ea90ff;
+}
 
 .seleccionados a {
   text-decoration: underline;
+}
+.seleccionados .curso-parrafo {
+  font-weight: bold;
+  color: #ea90ff;
 }
 
 .cards-wrapper {
@@ -370,14 +314,33 @@ footer {
 
 .carrera-curso .card {
   margin: 0 0.5em;
-  box-shadow: rgba(255, 255, 255, 0.5) 0px 2px 10px 3px;
   border-radius: 5px;
   background-color: inherit;
   color: #e1e1e1;
+  box-shadow: rgba(88, 88, 88, 0.5) 0px 2px 10px 3px;
+}
+
+.carrera-title {
+  margin-top: 30px;
+  color: #d1e500;
 }
 
 .carousel-inner {
   padding: 1em;
+}
+.carousel-inner .card {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card-body {
+  flex-grow: 1;
+}
+
+.btn-card-cursos {
+  align-self: flex-end;
 }
 
 .card-subtitle {
@@ -404,6 +367,11 @@ footer {
   text-align: center;
   text-transform: uppercase;
 }
+.btn-card-cursos:hover {
+  background-color: #d1e500;
+  color: #000;
+  transition: 0.2s;
+}
 
 .info-cursada i {
   font-size: 1.2rem;
@@ -423,12 +391,6 @@ footer {
 }
 .info-cursada p {
   font-size: 1.2rem;
-}
-
-.btn-card-cursos:hover {
-  background-color: #d1e500;
-  color: #000;
-  transition: 0.2s;
 }
 
 .blogs .card {
@@ -465,6 +427,7 @@ footer {
 }
 .form-contacto .form-title {
   margin-bottom: 15px;
+  color: #d1e500;
 }
 .form-contacto input {
   margin: 5px;
@@ -472,7 +435,6 @@ footer {
 .form-contacto .form-group label {
   margin: 5px;
 }
-
 .form-contacto .form-check {
   margin: 15px 5px;
 }
@@ -526,6 +488,83 @@ footer {
   color: #ea90ff;
   text-transform: uppercase;
   margin: 10px;
+}
+
+/* Agregar espaciado vertical entre las tarjetas en mobile*/
+@media (max-width: 767px) {
+  .custom-card,
+  .cta .card {
+    margin: 10px 0;
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .testimonio-texto {
+    font-size: 18px;
+  }
+  .testimonio-img {
+    height: 120px;
+    width: 120px;
+  }
+}
+@media screen and (max-width: 392px) {
+  .testimonio-texto,
+  .testimonio-info .estudiante {
+    font-size: 12px;
+  }
+  .estudiante-curso {
+    font-size: 10px;
+  }
+  .testimonio-img {
+    height: 80px;
+    width: 80px;
+  }
+  .bandera {
+    width: 45px;
+    height: 40px;
+  }
+}
+@media (max-width: 600px) {
+  .title {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 450px) {
+  .title {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+@media (max-width: 400px) {
+  .contacto {
+    padding: 0px;
+    width: auto;
+  }
+  .container {
+    margin-top: 100px;
+  }
+}
+@media (max-width: 760px) {
+  /* Agregar espacio vertical en vista mobile */
+  .row > div[class*=col-] {
+    margin-bottom: 20px;
+    align-items: center;
+  }
+  .webinar .row iframe {
+    width: 320px;
+    height: 187px;
+  }
+}
+@media (max-width: 1200px) {
+  /* Agrandar videos */
+  .webinar iframe {
+    width: 450px;
+    height: 254px;
+  }
+  .row > div[class*=col-] {
+    margin-bottom: 20px;
+    align-items: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

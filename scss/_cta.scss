@@ -10,6 +10,13 @@
         background-color: #1a1a1a;
         color: $color-paraffo;
         border: 2px solid $color-secundario;
+
+        &:hover {
+            background-color: $color-paraffo;
+            color: #1a1a1a;
+            border: 2px solid $color-secundario;
+            transition: all 0.2s;
+        }
     }
 
     .card-body i {
@@ -18,10 +25,5 @@
         padding: 8px 19px;
     }
 
-    .card:hover {
-        background-color: $color-paraffo;
-        color: #1a1a1a;
-        border: 2px solid $color-secundario;
-        transition: all 0.2s;
-    }
+    
 }

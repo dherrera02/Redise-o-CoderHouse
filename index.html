@@ -37,7 +37,7 @@
               <a class="nav-link" href="./pages/blog.html">Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./proyectos.html">Proyectos</a>
+              <a class="nav-link" href="./pages/proyectos.html">Proyectos</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./pages/contacto.html">Contacto</a>
@@ -52,8 +52,8 @@
     <div class="container-fluid">
       <div class="invisble" style="margin: 80px;"></div>
       <div class="row text-center">
-        <h1 class="title" style="padding: 20px; text-transform: uppercase;">Aprende, Crece, Triunfa</h1>
-        <h2>Unete a la comunidad de aprendizaje online <spam style="color: #d1e500">en vivo</spam>
+        <h1 class="title">Aprende, Crece, Triunfa</h1>
+        <h2>Unete a la comunidad de aprendizaje online <spam class="spams">en vivo</spam>
           más grande de Latinoamerica.</h2>
         <p>Clases online en vivo dictadas por expertos de la industria, enfoque 100% práctico,
           mentorías personalizadas y acceso a una comunidad de +210.000 estudiantes.</p>
@@ -127,7 +127,7 @@
   <div class="invisble" style="margin: 80px;"></div>
   <div class="container-fluid">
     <div class="row">
-      <h2 class="text-center" style="padding: 20px;">¡No postergues más <span style="color: #d1e500">tu
+      <h2 class="text-center" style="padding: 20px;">¡No postergues más <span class="spams">tu
           educación</span>!</h2>
       <h5 class="text-center">Domina la tecnología, consigue un mejor trabajo o crea tu propio negocio.</h5>
       <div class="invisble" style="margin: 20px;"></div>
@@ -166,12 +166,12 @@
     <div class="invisble" style="margin: 80px;"></div>
   </div>
   <!-- Testimonios -->
-  <div class="invisble" style="margin: 160px;"></div>
+  <div class="invisible" style="margin: 160px;"></div>
   <div class="testimonios text-center">
-    <h2 style="color: #d1e500; text-transform: uppercase;">+210.000 estudiantes.</h2>
+    <h2 class="title-testimonio">+210.000 estudiantes.</h2>
     <!-- Carousel -->
     <div class="centered-carousel">
-      <div id="testimonios-carousel" class="carousel slide" data-ride="carousel">
+      <div id="testimonios-carousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="container">
@@ -216,17 +216,16 @@
             </div>
           </div>
         </div>
-        <a class="carousel-control-prev" href="#testimonios-carousel" role="button" data-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carousel" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-
-        </a>
-        <a class="carousel-control-next" href="#testimonios-carousel" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" ariahidden="true"></span>
-
-        </a>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
       </div>
     </div>
   </div>
+  
   <!-- Compra -->
   <div class="container-fluid compra d-flex justify-content-center">
     <div class="row ">
@@ -351,14 +350,13 @@
     </div>
   </footer>
 
-
-  <!-- CDN del JS de Boostrap para que funcionen los componentes -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
     crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+
 </body>
 
 </html>
